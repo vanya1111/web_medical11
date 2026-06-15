@@ -1,0 +1,49 @@
+.login-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e3a6e 0%, #2d5a9e 50%, #1a4a8a 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.login-box {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.login-logo    { font-size: 48px; }
+.login-title   { font-size: 24px; font-weight: 700; color: #1e3a6e; margin: 8px 0 4px; }
+.login-subtitle{ font-size: 14px; color: #888; }
+
+.login-form { margin-bottom: 24px; }
+
+.pwd-wrapper { position: relative; }
+.pwd-wrapper .form-control { padding-right: 44px; }
+.pwd-toggle {
+  position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
+  background: none; border: none; cursor: pointer; font-size: 18px;
+  padding: 4px; line-height: 1;
+}
+
+.login-btn { width: 100%; justify-content: center; padding: 12px; font-size: 15px; margin-top: 8px; }
+
+.login-hints { border-top: 1px solid #eee; padding-top: 20px; }
+.login-hints p { font-size: 12px; color: #999; margin-bottom: 10px; text-align: center; }
+.hint-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.hint-btn {
+  display: flex; flex-direction: column; align-items: center; gap: 3px;
+  padding: 8px 6px; border: 1.5px solid #e0e7ff; border-radius: 8px;
+  background: #f8f9ff; cursor: pointer; transition: background 0.15s;
+}
+.hint-btn:hover { background: #e8eeff; border-color: #1e3a6e; }
+.hint-btn span { font-size: 11px; color: #666; }
+.hint-btn code { font-size: 12px; font-weight: 700; color: #1e3a6e; }
